@@ -1,16 +1,13 @@
 package com.example.tacoclouddomain.email;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 @Data
-@RequiredArgsConstructor
-@NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class Ingredient {
 
-    private final String code;
-    private final String name;
+    private String code;
+    private String name;
 
 }
